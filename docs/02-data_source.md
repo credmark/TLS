@@ -2,13 +2,14 @@
 
 ## 1. Credmark Token API
 
-### 1.1 data points
+### 1.1 Holding behavior
+
+### 1.2 DEX Trading behavior
 
 - dex trading pair
 - dex trading volume
 - total supply
 - holders
-
 
 - pools.token-dex-db
 - pools.dex-db
@@ -19,7 +20,17 @@ TODO:
 3. price volatility, alpha and beta to ethereum
 4.
 
-## 2. Etherscan
+## 2. Coin website
+
+- CMC (CoinMarketCap) or CoinGecko
+
+TODO:
+1. meta data query: name
+2. query its exchanges
+3. query its historical price and volume
+4. query its owner contract
+
+## 3. Etherscan
 
 - ABI
 - Source code
@@ -30,12 +41,13 @@ TODO:
 2.
 
 
-## 3. Coin website
+## 4. Audit status
 
-- CMC (CoinMarketCap) or CoinGecko
+- Protocol website
 
-TODO:
-1. meta data query: name
-2. query its exchanges
-3. query its historical price and volume
-4. query its owner contract
+## 5. Social media
+
+- Website
+- Discord
+- Twitter
+- Last major update time
