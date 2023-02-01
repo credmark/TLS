@@ -103,15 +103,16 @@ For token 0x471c3.., the sender sends every recipient with amount 250,457. The d
 
 The distribution of transaction amount can not be used alone to identify legitimate tokens. To differentiate the illegitimate token 0x208A9... from the legitimate tokens, we can count the unique address in the from and to fields for transfers. It's obvious that spam/scam tokens showing only 1 sender and no common address in from and to. There is no usage for such token at all.
 
-Token Name | Unique From Address | Unique To Address | Address in Both From and To | Total Unique Address |
-CRV        | 590                 | 713               | 443                         | 860                  |
-cvxCRV     | 136                 | 152               | 125                         | 163                  |
-UNI        | 504                 | 689               | 277                         | 916                  |
-LINK       | 1097                | 1627              | 546                         | 2178                 |
-WETH       | 843                 | 851               | 392                         | 1302                 |
-WBTC       | 952                 | 1159              | 665                         | 1446                 |
-0x208A     | 1                   | 5000              | 0                           | 5001                 |
-0x471c     | 1                   | 5000              | 0                           | 5001                 |
+| Token Name | Unique From Address | Unique To Address | Address in Both From and To | Total Unique Address |
+|------------|---------------------|-------------------|-----------------------------|----------------------|
+| CRV        | 590                 | 713               | 443                         | 860                  |
+| cvxCRV     | 136                 | 152               | 125                         | 163                  |
+| UNI        | 504                 | 689               | 277                         | 916                  |
+| LINK       | 1097                | 1627              | 546                         | 2178                 |
+| WETH       | 843                 | 851               | 392                         | 1302                 |
+| WBTC       | 952                 | 1159              | 665                         | 1446                 |
+| 0x208A     | 1                   | 5000              | 0                           | 5001                 |
+| 0x471c     | 1                   | 5000              | 0                           | 5001                 |
 
 The transaction data has its limit definitely. The example would the the SQUID token. It was created by scammers. They took advantage of their community, and inevitably committed a rug pull and ran off with millions. The transaction records for SQUID token is expected to pass the test (we did not get the data because it is on BSC). We need to score it from the sub-score of Meme.
 
