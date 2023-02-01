@@ -95,7 +95,7 @@ For illegitimate tokens, their transaction only appeared for a short period of t
 
 For legitimate tokens, there are many transactions with small amount, but there are a very small number of transaction in very large amount. The distribution of the transaction amount is right-skewed of very long tail.
 
-For token 0x208A9.., the sender's algorithm mocks of a legitimate token's transfer. The distribution of the transaction amount is also right-skewed with very long tail. It is a scam token with name "Asense.fi Yield Finance" to be a fraudulent token for the sense finance project that issues Yield Tokens(https://sense.finance/). The attacker is sophisticated. The 0x208A9C9D8E1d33a4f5b371Bf1864AA125379Ba1B could be a bait for the future after the Sense project issues their tokens
+For token 0x208A9.., the sender's algorithm mocks of a legitimate token's transfer. The distribution of the transaction amount is also right-skewed with very long tail. It is a scam token with name "Asense.fi Yield Finance" to be a fraudulent token for the sense finance project that issues Yield Tokens (https://sense.finance/). The attacker is sophisticated. The 0x208A9C9D8E1d33a4f5b371Bf1864AA125379Ba1B could be a bait for the future after the Sense project issues their tokens
 
 For token 0x471c3.., the sender sends every recipient with amount 250,457. The distribution is a flat line. It is rather a spam token.
 
