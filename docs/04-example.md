@@ -15,7 +15,7 @@ We divide the score into three ranges, with each range mapping to a kind of toke
 
 For each score, we have a few examples
 
-* 10. Value storing token, e.g. fiat-backed or over-collateralized stablecoin, WETH, WBTC
+* 10: Value storing token, e.g. fiat-backed or over-collateralized stablecoin, WETH, WBTC
 * 9:  Governance token with voting rights, e.g. CRV, AAVE
 * 8:  LP tokens, debt tokens, e.g. aTokens or cTokens
 * 7:  Yield-bearing tokens, e.g. y-tokens
