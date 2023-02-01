@@ -1,13 +1,38 @@
-## 4. Examples
+---
+title: "TLS - 03 - Example"
+author: "paul@credmark.com, kunlun@credmark.com"
+date: "2023-01-31"
+version: 1.0
+---
 
-We broadly divide
+## Examples for the score scale
 
+We divide the score into three ranges, with each range mapping to a kind of tokens
 
-- 10-7: Investable
-- 6-0: Uninvestable
+- 10-7: Legitimate
+- 6-4: Observation. This range is to park ex-legitimate tokens with deteriorating sub-scores
+- 3-0: Illegitimate
 
-10. Governance from credible
-9.  (yield-bearing from liquidity provision, collateral, staked)
-6-0:  (e.g. FTT, LunaUST)
-1: Spam
-0: Scam, Rekted/Exploited
+For each score, we have a few examples
+
+* 10. Value storing token, e.g. fiat-backed or over-collateralized stablecoin, WETH, WBTC
+* 9:  Governance token with voting rights, e.g. CRV, AAVE
+* 8:  LP tokens, debt tokens, e.g. aTokens or cTokens
+* 7:  Yield-bearing tokens, e.g. y-tokens
+* ...:
+* 3: Meme tokens: DOGE, SQUID (after Binance blocks the developer accounts)
+* 2: Spam tokens:
+* 1: Scam tokens:
+* 0: Rekt/Exploited, e.g. FTT, LunaUST
+
+## Example for TLS result
+
+- Internal Token ID: ETH-00001
+- Token standard: ERC-20
+- Address and network id:
+    + 0x00... on 1
+    + 0x02... on 37
+- Inception date: 02/01/2021
+- Project website: www.token_abc.com
+- Token contract: https://etherscan.io/address/0x00...
+- TLS score: 7.8

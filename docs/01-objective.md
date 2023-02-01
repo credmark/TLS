@@ -41,7 +41,7 @@ We consider illegitimate tokens are going to belong to one of five categories.
 
 - We will consider fungible tokens only, i.e. ERC-20 or equivalent token standard
 
-## Plan
+## Stages
 
 There would be four stages to reach the end goals for a scoring model.
 
