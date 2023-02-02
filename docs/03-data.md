@@ -95,7 +95,7 @@ For illegitimate tokens, their transaction only appeared for a short period of t
 
 For legitimate tokens, there are many transactions with small amount, but there are a very small number of transaction in very large amount. The distribution of the transaction amount is right-skewed of very long tail.
 
-For token 0x208A9.., the sender's algorithm mocks of a legitimate token's transfer. The distribution of the transaction amount is also right-skewed with very long tail. It is a scam token with name "Asense.fi Yield Finance" to be a fraudulent token for the sense finance project that issues Yield Tokens (https://sense.finance/). The attacker is sophisticated. The 0x208A9C9D8E1d33a4f5b371Bf1864AA125379Ba1B could be a bait for the future after the Sense project issues their tokens
+For token 0x208A9.., the scammer is sophisticated. First, the transfer algorithm mocks of legitimate token's transfers. The transfer amount follow a distribution so the distribution is right-skewed with very long tail. Second, the token is named as "Asense.fi Yield Finance". There is a DeFi project with a similar name, called Sense Finance (https://sense.finance/). Sense Finance planned to issue "Yield Token" as a DeFi product. The scammer's token 0x208A9C9D8E1d33a4f5b371Bf1864AA125379Ba1B is a fraudulent token that made its first attempt when the scammer "airdrop" it to random recipients. The token could still harm users after the Sense project issues their tokens because it looks much alike the real token in many aspects. The alarm may raise because its source code has never been submitted to Etherscan.
 
 For token 0x471c3.., the sender sends every recipient with amount 250,457. The distribution is a flat line. It is rather a spam token.
 
@@ -116,4 +116,4 @@ The distribution of transaction amount can not be used alone to identify legitim
 
 The transaction data has its limit definitely. The example would the the SQUID token. It was created by scammers. They took advantage of their community, and inevitably committed a rug pull and ran off with millions. The transaction records for SQUID token is expected to pass the test (we did not get the data because it is on BSC). We need to score it from the sub-score of Meme.
 
-Above test drive demonstrate that on-chain data has lots of useful information to help justify the legitimacy of a token. We hope to research for more ways from metric and statistical learning point of views.
+Above test drive of ideas shows promises that on-chain data-based models are useful to justify the legitimacy of a token. We hope to research for more ways from metric and statistical learning point of views.
