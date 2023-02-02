@@ -7,7 +7,7 @@ version: 1.0
 
 ## Score
 
-Although a token's legitimacy is a binary result, TLS score is designed to be from the lowest possible score of 0 to the highest of 10. The higher the score the more likely it is to be legitimate. The reason for using a range of scores is to accommodate a wide variety of tokens. Some tokens are true scams that walks away with your investment funds. Some tokens are just spams that was sent to your wallet randomly. The scores could help differentiate various level of legitimacy. The mapping between score an its meaning will be worked out during the calibration of the model.
+Although a token's legitimacy is a binary result, TLS is designed to be from the lowest possible score of 0 to the highest of 10. The higher the score the more likely it is to be legitimate. The reason for using a range of scores is to accommodate a wide variety of tokens. Some tokens are true scams that walks away with your investment funds. Some tokens are just spams that was sent to your wallet randomly. The scores could help differentiate various level of legitimacy. The mapping between score an its meaning will be worked out during the calibration of the model.
 
 ## Score composition
 
@@ -70,7 +70,7 @@ Scoring mechanism for legitimate and illegitimate token are not symmetric.
 
 We will designate some sub-scores to be "overriding" so they can immediately react.
 
-### TLS score calibration
+### TLS calibration
 
 Producing the TLS from the sub-scores is a linear model in general.
 
@@ -82,7 +82,7 @@ The ground truth could also help to establish guides for score explanation.
 
 ## Update frequency
 
-We expect the initial TLS score is able to differentiate between legitimate and illegitimate tokens.
+We expect the initial TLS is able to differentiate between legitimate and illegitimate tokens.
 
 The change of score over time shall reflect primarily how a legitimate token turns to an illegitimate token when its condition deteriorating. Its score could first fall to the medium range and subsequently fall lower, or goes back to a higher score if situation improves. The case of illegitimate tokens turning back to legitimate token is rare.
 

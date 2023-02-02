@@ -61,7 +61,7 @@ TLS is expected to be more sensitive to the downside of the price-related data t
 
 However, price-related data has its limitation. For tokens of small volume or no trading, such as LP tokens and staked tokens, we would look beyond the exchanges for their usage data, such as ming/redeem, governance voting, and etc.
 
-The use of crypto has embodied many kinds, trading, yield seeking, DAO governance. TLS score is calibrated to manifest such use cases.
+The use of crypto has embodied many kinds, trading, yield seeking, DAO governance. TLS is calibrated to manifest such use cases.
 
 ### A generic on-chain transaction scoring model
 

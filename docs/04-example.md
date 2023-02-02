@@ -34,4 +34,4 @@ For each score, we have a few examples. The tokens and their scores are close to
 | Inception date    | 02/01/2021                           |
 | Project website   | www.token_abc.com                    |
 | Token contract    | https://etherscan.io/address/0x00... |
-| TLS score         | 7.8                                  |
+| TLS               | 7.8                                  |
