@@ -7,18 +7,20 @@ version: 1.0
 
 ## Score
 
-Although a token's legitimacy is a binary result, TLS is designed to be from the lowest possible score of 0 to the highest of 10. The higher the score the more likely it is to be legitimate. The reason for using a range of scores is to accommodate a wide variety of tokens. Some tokens are true scams that walks away with your investment funds. Some tokens are just spams that was sent to your wallet randomly. The scores could help differentiate various level of legitimacy. The mapping between score an its meaning will be worked out during the calibration of the model.
+Just as credit scores aren't binary, TLSes aren't binary. A TLS is a value in the range of 0-10. The higher the score the more likely it is to be legitimate. We use a range because the idea of "legitimacy" is a continuum. A token designed to steal your funds is truly illegitimate, but an airdropped token designed to make you visit a website is arguably somewhat legitimate. 
+
+The mapping between score rangees and their meaning, i.e., something more readily understandable to humans, will be worked out during the calibration of the model.
 
 ## Score composition
 
-The score is a composition from sub-scores. The sub-scores are designed from the below four categories:
+The score is a composition from sub-scores. We currently expect all sub-scores to belong to one of four categories:
 
-- token characteristic
+- token characteristics
 - token behavior
-- characteristic of the entity which issued the token
-- behavior of this issuing entity
+- token issuing entity characteristic
+- token issuing entity behavior
 
-For example, token's name, total supply, circulating supply is for token characteristic. token's distribution pattern is for a token behavior.
+For example, a token's name, total supply, circulating supply are token characteristics. A token's distribution pattern is token behavior.
 
 Sub-scores could be simple and binary, or complex and non-binary.
 
@@ -44,19 +46,19 @@ An entity that sold $25M of tokens but hasn’t updated its website for two year
 
 ### Sub-score generation
 
-Some sub-scores can be assigned with some interpretation from raw data, such as project's income.
+Some sub-scores can be derived purely from raw chaing data, such as a project's income.
 
-Some sub-score need to be assigned with expert judgement, such as token's utility in the project, because the utility varies between projects. The expert judgement would be supported and preferable derived from quantitative measures.
+Some sub-score may need input from humans. This project may not do this directly but could, indirectly, include human input by consulting data produced by CoinMarketCap, for example. Some of that data is produced with human intervention.
 
-Some sub-score need to be normalized with the current market sentiment, such as token's trading volume, so that the sub-score is stable between bear and bull market.
+Some sub-score will need to be normalized against the current market. A sub-score that analyzed trading volume, for example, should be designed to be stable irrispective of macro market conditions.
 
 ### Producing the TLS from sub-scores
 
-The sub-scores are would have to be normalized before being used to produce the final TLS.
+All sub-scores will need to be normalized before being used to produce the final TLS.
 
 Some sub-scores are more important than others, so they will be given additional weight in the final calculation. Those weights are to be proposed and debated as the sub-scores are defined.
 
-Some sub-scores could have overriding effect to the final score for events like rekted and bankruptcy. The inclusion of "overriding" sub-score is discussed in the adjacent section below.
+Some sub-scores could have overriding effect on the final score for events like rekted and bankruptcy. The inclusion of "overriding" sub-score is discussed in the adjacent section below.
 
 Once sub-scores are weighted, they are simply averaged.
 
@@ -64,7 +66,7 @@ Once sub-scores are weighted, they are simply averaged.
 
 Scoring mechanism for legitimate and illegitimate token are not symmetric.
 
-- For legitimate tokens, its legitimacy is found in its designated purpose. Its score is decided by use cases inside or outside the project, as what "DeFi lego" achieves.
+- For legitimate tokens, its legitimacy is found in the token's designated purpose. The socring will have to consider use cases within the project context and outside of that context, for example, the protocol's inclusing in a recognized "DeFi lego" stack.
 
 - For illegitimate tokens, it can pretend to be a legitimate token in many aspects, however, it will be slashed to be illegitimate when any one of the "overriding" sub-score is breached, such as extraordinary large supply and random distribution pattern.
 
@@ -84,6 +86,6 @@ The ground truth could also help to establish guides for score explanation.
 
 We expect the initial TLS is able to differentiate between legitimate and illegitimate tokens.
 
-The change of score over time shall reflect primarily how a legitimate token turns to an illegitimate token when its condition deteriorating. Its score could first fall to the medium range and subsequently fall lower, or goes back to a higher score if situation improves. The case of illegitimate tokens turning back to legitimate token is rare.
+The change of score over time shall reflect primarily how a legitimate token becomes illegitimate when its condition deteriorating. Its score could first fall to the medium range and subsequently fall lower, or goes back to a higher range if its situation improves. The case of illegitimate tokens becoming more legitimate is likely rare.
 
-The data collection and customization to initialize the score will take most of the effort while the subsequent update only performs the data refreshing.
+The data collection and customization to initialize the score will take most of the effort while subsequent updates only require data refreshing.
