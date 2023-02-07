@@ -8,43 +8,56 @@ version: 1.0
 
 ## Objective
 
-Crypto tokens are in the form of smart contract on blockchain. They lack of many anti-fraud measures on fiat currencies or TradeFi securities. Those measures has been deployed because of the centralization in the issuance, governance and exchange for them. With such measures are non-existence in Web3 and DeFi, crypto tokens have relied on users' self-awareness and protocol teams' due diligence for long time. The UX is fragile and vulnerable to trojan, spam and scam.
+Crypto tokens are smart contracts. Because they are decentralized they are not surronded by anti-fraud structures found in traditional finance. Users of centralized financial products enjoy the protection of these, usually invisible, structures. In crypto we rely on users' self-awareness and education, as well developers' care and due diligence. The resulting UX is fragile and vulnerable to trojans, spam and scams.
 
-We hope to address such problem in the TLS (Token Legitimacy Score) project by scoring token by its legitimacy. This score can be determined by various factors from token characteristic, token behavior, characteristic of the entity which issued the token and the behavior of this issuing entity. The higher the score, the more legitimate the token is considered to be. Developers and users can rely on this score to avoid loss and waste of resources.
+We hope to partially address this problem with the Token Legitimacy Score (TLS) project. The project will evaluate and score tokens according to criteria that are indicative of legitimacy/illegitimacy. The evaluation will result in a score – a TLS score – being assigned to tokens. 
 
-We hope to score tokens with up-to-date data and calibrated models to achieve timely and accuracy.
+Scores will be determined by analyzing:
+
+* token characteristics,
+* token behavior, 
+* token issuer characteristics, and 
+* token issuer behavior. 
+
+The higher the TLS score, the more legitimate we determine the token to be. The industry and our thinking are constantly evolving, so the scoring algorithm will as well.
+
+We hope that, over time, developers and users will be able to rely on the TLS score to avoid wasting time, resources, and money.
 
 ## Meaning of legitimacy and illegitimacy
 
-We consider legitimate tokens are going to belong to one of four categories.
+Legitimate tokens will belong to one of four categories.
 
-1. Value: any token that serves no purpose other than the exchange of value, such as Bitcoin, Monero, or, arguably, Doge.
-2. Security: any token which provides access to a potential income stream, such as xxx.
-3. Governance: any token that provides voting rights, usually associated with the management of a crypto project, such as xxx.
-4. Utility: any token that serves a function in an economic system, such as xxx.
+1. Value: any token that serves no purpose other than the exchange of value.
+2. Security: any token that represents ownerhip of value.
+3. Governance: any token that provides voting rights, usually associated with the management of a crypto project.
+4. Utility: any token that serves a function in an economic system.
 
-We consider illegitimate tokens are going to belong to one of five categories.
+Illegitimate tokens will belong to one of five categories.
 
-1. Meme: any token that is traded for fun, because it is associated with something cute or popular, such as Doge.
-2. Spam: any token designed to entice you to go somewhere, like a website, or do something, such as $USDCBonus.com.
+1. Meme: any token that is traded for fun, because it is associated with something cute or popular.
+2. Spam: any token designed to entice you to go somewhere, like a website.
 3. Scam: any token used in a scheme to defraud someone of legitimate tokens, such as a token called $AAVE that is not the $AAVE.
-4. Rekt: any token was a victim of hacking and attacks, resulting in theft or inflated issuance, leading to loss of value and/or loss of utility, such as MNGO after exploit in Oct 2022.
-5. Bankrupt: any token losing its creditworthiness and value due to unfulfilled requirements for collateral and asset backing, such as FTT after FTX’s bankruptcy.
+4. Rekt: any token that has lost its value due to a hack or attack.
+5. Bankrupt: any token that has lost its value due to the loss of collateral or the disappearance of a backing entity.
 
 ## Usage
 
-1. Avoid loss from transacting the illegitimate tokens
-2. Avoid waste in resources to price and exchange the illegitimate tokens.
+There are many reasons to use a TLS score including:
+
+* avoiding losses due to scams,
+* not wasting time,
+* clean user interfaces, 
+* etc.
 
 ## Coverage
 
-- We will consider fungible tokens only, i.e. ERC-20 or equivalent token standard/
+For the time being we are only covering fungible tokens on EVM chains.
 
 ## Stages
 
-There would be four stages to reach the end goals for a scoring model. Each stage is with a primary goal to achieve.
+We expect this work to go through multiple stages. We currently have four on the drawing board, but there will almost certainly be more. Each stage, as planned, has a single goal. Each model will build on the previous one so the API will only depend on a single model.
 
-1. A model that can score the illegitimacy tokens with high accuracy, reduce false negative rate
-2. A model that can score the legitimacy tokens with high accuracy and classify them for different purpose, and reduce false positive rate
-3. A model that can update timely
-4. Calibration the model using historical data and more refinement to the model
+1. A model that can score illegitimate tokens with high accuracy: reduce false negatives.
+2. A model that can score legitimate tokens with high accuracy and classify them: reduce false positives.
+3. A model that can update in response to events: fresher data.
+4. A model that makes better use of historical data: increase accuracy.
